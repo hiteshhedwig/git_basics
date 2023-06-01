@@ -2,7 +2,7 @@
 
 Basic set of instructions to practice and learn basic to intermediate application of git in your project.
 
-What is git? *Software which allows you to manage and keep track of your development into the project.*
+What is git? *Software which allows you to manage and keep track of your development in the project.*
 
 ## Getting Started :
 
@@ -55,4 +55,47 @@ git commit is an alternative way of saying "file which were in this stash folder
 ```bash
 
 git commit -m "Add CSharp example"
+```
+
+now if you type
+```bash
+git log 
+```
+output will be like 
+```bash
+commit b74787e256c681776c30c6e22cf18adde6a93b22 (HEAD -> master)
+Author: hiteshhedwig <hitesh.kumar61@yahoo.com>
+Date:   Thu Jun 1 12:41:07 2023 +0530
+
+    add example code
+```
+
+this commit ID `b74787e256c681776c30c6e22cf18adde6a93b22` will be tracked by git further. 
+
+why this is helpful ? the changes you made in `N` number of files. will be saved under the commit ID incase there is something went wrong, you can open the commit and check what was the issue. This gets crucial when high number of people are working on a single project. 
+
+in simple words, code saved was shipped with commit ID `b7478..`
+
+
+
+### But If you forgot to add one more file to the commit :
+
+One simple solution is to add the left over file and commit it. 
+
+Other way would be to revert the previous commit and add the file and create a commit again.
+
+Revert the previous commit :
+```bash
+git reset HEAD~
+```
+
+Add all the relevant files now.
+
+```bash
+git add .
+```
+Now, commit it.
+
+```bash
+git commit -m "add example code"
 ```
