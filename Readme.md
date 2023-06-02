@@ -141,7 +141,7 @@ you can notice that commit ID has changed. **Can you tell me why ?**
 
 what is the pull request? also widely known as PR in coding community.
 
-avoid trying to visualize what pull request can refer to (if it doesnt make sense at the 2-3 attempts). Just simply try to understand PR is a abbreviated way of saying, *"i have made some changes to fix/upgrade this package, can you merge this into relevant branch of the project?"* its upto author now if he/she wants to merge your PR (changes made) to his branch or not.
+avoid trying to visualize what pull request can refer to (if it doesnt make sense at the 2-3 attempts). Just simply try to understand PR is a abbreviated way of saying to the author of the repo, *"i have made some changes to fix/upgrade this package, can you merge this into relevant branch of the project?"* its upto author now if he/she wants to merge your PR (changes made) to his branch or not.
 
 you should be in the right branch of your project.
 
@@ -150,4 +150,5 @@ you should be in the right branch of your project.
 git push origin "your-branch-name"
 ```
 
-for example : `git push origin new-feature"
+for example : `git push origin new-feature`
+
