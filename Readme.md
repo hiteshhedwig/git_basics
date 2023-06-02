@@ -150,4 +150,5 @@ you should be in the right branch of your project.
 git push origin "your-branch-name"
 ```
 
-for example : `git push origin new-feature"
+for example : `git push origin new-feature`
+
