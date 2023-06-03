@@ -149,6 +149,47 @@ you should be in the right branch of your project.
 
 git push origin "your-branch-name"
 ```
+for example : `git push origin git_PR_test`
 
-for example : `git push origin new-feature`
+the output from terminal should look like below :
+
+```
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'git_PR_test' on GitHub by visiting:
+remote:      https://github.com/hiteshhedwig/git_basics/pull/new/git_PR_test
+remote: 
+To https://github.com/hiteshhedwig/git_basics.git
+ * [new branch]      git_PR_test -> git_PR_test
+ ```
+
+if you head to link provided by the terminal :
+
+```
+remote: https://github.com/hiteshhedwig/git_basics/pull/new/git_PR_test
+ ```
+
+![image info](assets/pr_test.png)
+
+You can fill up your PR motive and basic description in the writeup section. Then you can see the create `Pull request` widget to create a pull request.
+
+post this: author & contributors will review your PR and evaluate. They can accept the PR or ask you to make some changes or close it depending upon the relevency of the pull request.
+
+#### But how do i update my PR after some more commits ?
+
+you can make your commits in the same branch that you have pushed on the github. if you push on github by using : `git push origin git_PR_test`.
+
+and recheck your PR on the same link. It should've been updated.
+
+Before update :
+
+![image info](assets/pr_create_1.png)
+
+After update :
 
