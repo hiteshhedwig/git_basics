@@ -137,7 +137,9 @@ in simple words, code saved was sealed with commit ID `b7478..`
 
 ### But If you forgot to add one more file to the commit :
 
-One simple solution is to add the left over file and commit it. 
+**CAUTION! Changing history can have nasty side effects, procced carefully**
+
+One solution is to add the left over file and commit it. 
 
 Other way would be to revert the previous commit and add the file and create a commit again.
 
@@ -252,6 +254,34 @@ but one thing is for sure, if you are face the conflicts, be very careful while 
 ### Overall git flow :
 
 ![image info](assets/git_flow.png)
+
+
+### General side information :
+
+let's say you create your own project. How will you set it up with the git ?
+
+#### for your project init git :
+below will allow initialize its git setup in that particular directory.
+```bash
+
+git init
+```
+#### download all the remote tracking branches into local system :
+
+```bash
+git fetch 
+```
+
+#### update the current branch with all the new commits on remote branch:
+
+```bash
+git pull
+```
+
+
+
+
+----
 
 
 
