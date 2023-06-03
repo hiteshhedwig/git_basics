@@ -6,6 +6,7 @@ What is git? *Software which allows you to manage and keep track of your develop
 
 - git should be installed in your system.
 
+
 ## Getting Started :
 
 How to use this repo ?
@@ -88,7 +89,6 @@ git add example/add_csharp.cs
 git add example/add_rust.rs
 git add example/add_go.go 
 ```
-
 They all will be stashed in the same folder before being sealed.
 
 if you have created alot of new files then adding a file one by one can be little annoying. so you can just add all the files to the stash folder by saying
@@ -96,6 +96,12 @@ if you have created alot of new files then adding a file one by one can be littl
 git add .
 ```
 
+#### use .gitignore when needed :
+there are instances when let's say you have several `GB's` of data stored in your local repo. But it's not practical to push it to github. 
+
+It's better to add it to `.gitignore` file. So that github doesn't track those files. Simply add the file/folders path to the `.gitignore`.
+
+and remember to add `.gitignore` file using `git add `.
 
 ### Commit your changes made to git :
 
@@ -242,9 +248,21 @@ in simple terms, conflicts while merging increase your work by small to much. De
 
 but one thing is for sure, if you are face the conflicts, be very careful while resolving the conflicts because you'll have to resolve it one by one.
 
-### Tags :
+
+### Overall git flow :
+
+![image info](assets/git_flow.png)
 
 
 
+## Glossary :
 
-
+**git**: an open source, distributed version-control system
+**GitHub**: a platform for hosting and collaborating on Git repositories
+**commit**: a Git object, a snapshot of your entire repository compressed into a SHA
+**branch**: a lightweight movable pointer to a commit
+**clone**: a local version of a repository, including all commits and branches
+**remote**: a common repository on GitHub that all team member use to exchange their changes
+**fork**: a copy of a repository on GitHub owned by a different user
+**pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
+**HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using git checkout
