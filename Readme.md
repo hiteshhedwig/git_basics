@@ -4,12 +4,41 @@ Basic set of instructions to practice and learn basic to intermediate applicatio
 
 What is git? *Software which allows you to manage and keep track of your development in the project.*
 
+- git should be installed in your system.
+
 ## Getting Started :
 
 How to use this repo ?
 - Fork it on your github account. 
 
-and follow the following instructions :
+
+and follow the instructions :
+
+### Configure your git on your system (optional) :
+
+for git to track your changes, it should know who made the changes.
+so letting git know about us a bit helps us in future.
+
+**username** should be your github username.
+```
+git config --global user.name "[name]"
+```
+**email** should be your email address as in github account.
+```
+git config --global user.email "[email address]"
+```
+
+
+### Clone the repo in your system :
+ 
+since you have forked it. it should be available in your repository list too.
+
+For you `<git repo link>` should be the one in your repository list.
+
+```bash
+
+git clone <git repo link>
+```
 
 ### Create a new branch :
 ```bash
@@ -192,4 +221,30 @@ Before update :
 ![image info](assets/pr_create_1.png)
 
 After update :
+
+![image info](assets/pr_updated_1.png)
+.
+
+#### whats the deal about conflicts while merging?
+
+if you'll ask a programmer about one thing he'll never want to see is conflicts while merging with the base branch. 
+
+if you are wondering, what is it and whats so fuss about it ?
+in simple terms, conflicts while merging increase your work by small to much. Depending upon how much you have messed up in your current branch. Reason could be anything.
+1. created branch from some wrong base branch.
+2. made some unnecessary changes that broke the merging.
+3. or anything else
+
+**Solution :** simple it is. personally i don't prefer using command line git to resolve conflicts. 
+
+
+[this git extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack) in vscode should help. Or there are many other extensions which can just make your life easy to resolve the conflicts.
+
+but one thing is for sure, if you are face the conflicts, be very careful while resolving the conflicts because you'll have to resolve it one by one.
+
+### Tags :
+
+
+
+
 
