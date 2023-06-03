@@ -188,4 +188,10 @@ you can make your commits in the same branch that you have pushed on the github.
 
 and recheck your PR on the same link. It should've been updated.
 
+Before update :
+
+![image info](assets/pr_create_1.png)
+
+After update :
+
 
